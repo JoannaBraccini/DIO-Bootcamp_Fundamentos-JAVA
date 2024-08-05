@@ -1,0 +1,57 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "MinhaClasse",
+      "request": "launch",
+      "mainClass": "edu.joanna.anatomiadasclasses.MinhaClasse",
+      "projectName": "Introdução-Java_be03c360"
+    },
+    {
+      "type": "java",
+      "name": "Usuario",
+      "request": "launch",
+      "mainClass": "edu.joanna.metodos.Usuario",
+      "projectName": "Introdução-Java_be03c360"
+    },
+    {
+      "type": "java",
+      "name": "Operadores",
+      "request": "launch",
+      "mainClass": "edu.joanna.operadores.Operadores",
+      "projectName": "Introdução-Java_be03c360"
+    },
+    {
+      "type": "java",
+      "name": "AboutMe",
+      "request": "launch",
+      "mainClass": "edu.joanna.terminal_argumentos.AboutMe",
+      "projectName": "Introdução-Java_be03c360",
+      "args": ["Joanna", "Braccini", "37", "1.61"]
+    },
+    {
+      "type": "java",
+      "name": "MinhaClasse(1)",
+      "request": "launch",
+      "mainClass": "edu.joanna.terminal_argumentos.MinhaClasse",
+      "projectName": "Introdução-Java_be03c360"
+    },
+    {
+      "type": "java",
+      "name": "TiposVariaveis",
+      "request": "launch",
+      "mainClass": "edu.joanna.tiposvariaveis.TiposVariaveis",
+      "projectName": "Introdução-Java_be03c360"
+    }
+  ]
+}
