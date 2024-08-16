@@ -1,9 +1,20 @@
 package dio.gof;
 
-//Testes relacionados ao design pattern do Singleton
-public class Test {
+import dio.gof.singleton.SingletonEager;
+import dio.gof.singleton.SingletonLazy;
+import dio.gof.singleton.SingletonLazyHolder;
+import dio.gof.strategy.Comportamento;
+import dio.gof.strategy.ComportamentoAgressivo;
+import dio.gof.strategy.ComportamentoDefensivo;
+import dio.gof.strategy.ComportamentoNormal;
+import dio.gof.strategy.Robo;
 
+//Testes relacionados aos design patterns
+public class Test {
     public static void main(String[] args) {
+
+        // Singleton
+
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
         lazy = SingletonLazy.getInstancia();
@@ -18,6 +29,24 @@ public class Test {
         System.out.println(lazyHolder);
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
+
+        // Strategy
+
+        Comportamento normal = new ComportamentoNormal();
+        Comportamento defensivo = new ComportamentoDefensivo();
+        Comportamento agressivo = new ComportamentoAgressivo();
+
+        Robo robo = new Robo();
+
+        robo.setComportamento(normal);
+        robo.mover();
+        robo.mover();
+        robo.setComportamento(defensivo);
+        robo.mover();
+        robo.setComportamento(agressivo);
+        robo.mover();
+        robo.mover();
+        robo.mover();
 
     }
 
